@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Settings, Megaphone, ChevronDown, Check, Zap, Globe, Cpu, 
   Menu, X, ArrowRight, Search, Sparkles, Send, ArrowLeft, 
-  Briefcase, PenTool, Hammer, Target, Code, Table, Activity, BarChart, ExternalLink, Trophy
+  Briefcase, PenTool, Hammer, Target, Code, Table, Activity, BarChart, ExternalLink, Trophy, Star
 } from 'lucide-react';
 
 // --- MICRODATA (SCHEMA.ORG) GENERATOR ---
@@ -616,7 +616,7 @@ export default function App() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-wide flex flex-wrap justify-center items-center gap-3 md:gap-4 text-center">
                 <span className="gold-text-smooth">ПОРТФОЛИО И ТЕХНОЛОГИИ</span>
               </h2>
-              <p className="text-xl text-gray-400">Глубокое погружение в наш технологический стек и реализованные проекты.</p>
+              <p className="text-xl text-gray-400">Глубокое погружение в наш технологический стек и реализованные проектов.</p>
             </ScrollReveal>
 
             {/* Кейсы из портфолио */}
@@ -1013,11 +1013,7 @@ export default function App() {
 
 // Helpers
 const StarIcon = () => <Star className="w-6 h-6 text-yellow-500 shrink-0" fill="currentColor" />;
-const Star = ({ className, fill }) => (
-  <svg viewBox="0 0 24 24" fill={fill || "none"} stroke="currentColor" className={className}>
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-  </svg>
-);
+
 // Обновленный компонент портфолио
 const PortfolioLink = ({ href, name }) => (
   <a href={href} target="_blank" rel="noreferrer" className="flex items-center justify-center p-4 bg-gradient-to-r from-yellow-700/20 to-yellow-900/20 border border-yellow-600/50 rounded-xl hover:scale-105 hover:bg-yellow-600/30 hover:border-yellow-400 transition-all shadow-[0_0_15px_rgba(234,179,8,0.1)] group text-center min-h-[80px]">
