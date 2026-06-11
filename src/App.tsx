@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { 
-  Settings, Megaphone, ChevronDown, Check, Zap, Globe, Cpu, 
-  Menu, X, ArrowRight, Search, Sparkles, Send, ArrowLeft, 
-  Briefcase, PenTool, Hammer, Target, Code, Table, Activity, BarChart, ExternalLink, Trophy, Star
+import { useState, useEffect, useRef } from 'react';
+import {
+  Settings, Megaphone, ChevronDown, Check, Zap, Cpu,
+  Menu, X, ArrowRight, Search, Sparkles, Send, ArrowLeft,
+  Briefcase, PenTool, Hammer, Target, Code, Table, Activity, BarChart, ExternalLink, Trophy
 } from 'lucide-react';
 
 // --- MICRODATA (SCHEMA.ORG) GENERATOR ---
@@ -1012,7 +1012,6 @@ export default function App() {
 }
 
 // Helpers
-const StarIcon = () => <Star className="w-6 h-6 text-yellow-500 shrink-0" fill="currentColor" />;
 
 // Обновленный компонент портфолио
 const PortfolioLink = ({ href, name }) => (
